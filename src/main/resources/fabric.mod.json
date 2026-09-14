@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "returnbydeath",
+	"version": "${version}",
+	"name": "Return by Death",
+	"description": "Adds a Return By Death mechanic inspired by ReZero.",
+	"authors": [
+		"Rallve"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/returnbydeath/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rallve.returnbydeath.ReturnByDeath"
+		],
+		"fabric-datagen": [
+			"net.rallve.returnbydeath.ReturnByDeathDataGenerator"
+		],
+		"client": [
+			"net.rallve.returnbydeath.ReturnByDeathClient"
+		]
+	},
+	"mixins": [
+		"returnbydeath.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
