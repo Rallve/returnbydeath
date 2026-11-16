@@ -22,7 +22,8 @@ public class ReturnByDeath implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-
+		EventHandler.register();
+		Commands.register();
 	}
 
 	public static Identifier id(String path) {
